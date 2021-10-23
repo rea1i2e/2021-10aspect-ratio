@@ -1,0 +1,118 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.section-wrapper {
+  margin-bottom: 32px;
+}
+
+.box-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.vw-box {
+  width: 25vw;
+  height: 25vw;
+}
+
+.vw-box1 {
+  background-color: #d6995c;
+}
+
+.vw-box2 {
+  background-color: #d6d65c;
+}
+
+.vw-box3 {
+  background-color: #99d65c;
+}
+
+.vw-box4 {
+  background-color: #5cd65c;
+}
+
+.vw-box5 {
+  background-color: #5cd699;
+}
+
+.wrapper--padding32px {
+  padding: 32px;
+}
+
+.wrapper--padding32pxfix {
+  padding: 32px;
+  width: calc( 50% + 32px * 2);
+}
+
+.description-wrapper {
+  padding: 1em 1em 1em 2em;
+  list-style-position: inside;
+}
+
+.description-wrapper li {
+  text-indent: -1em;
+}
+
+.vw-content {
+  background-color: #d6d65c;
+  height: calc( 50vw * 0.75);
+  width: 50vw;
+}
+
+.pseudo-element-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.pseudo-element-wrapper::before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+  /* 高さを幅の75%に固定 */
+}
+
+.content1 {
+  background-color: #5cd65c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content2 {
+  background-color: #5cd6d6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content3 {
+  background-color: #5c99d6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
