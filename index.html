@@ -4,23 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>aspect ratio test</title>
    <!-- リセットCSS -->
    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>画面幅が変わっても、アスペクト比を保つ方法（２）</h1>
-  <p>アスペクト比を保ったまま、画面いっぱいに要素を並べる</p>
-  <p>アスペクト比を保ったまま、画面いっぱいに要素を並べる</p>
+  <p>アスペクト比1:1を保ったまま、画面いっぱいに要素を並べる</p>
   <section class="section-wrapper">
     <h2>vwを活用</h2>
     <div class="box-wrapper">
-      <div class="vw-box vw-box1"></div>
-      <div class="vw-box vw-box2"></div>
-      <div class="vw-box vw-box3"></div>
-      <div class="vw-box vw-box4"></div>
-      <div class="vw-box vw-box5"></div>
+      <div class="vw-box box1"></div>
+      <div class="vw-box box2"></div>
+      <div class="vw-box box3"></div>
+      <div class="vw-box box4"></div>
+      <div class="vw-box box5"></div>
+    </div><!-- /.box-wrapper -->
+  </section><!-- /.section-wrapper -->
+  
+  <section class="section-wrapper">
+    <h2>擬似要素を活用</h2>
+    <div class="box-wrapper">
+      <div class="percent-wrapper"><div class="pseudo-element-wrapper"><div class="pseudo-element-box box1"></div></div></div>
+      <div class="percent-wrapper"><div class="pseudo-element-wrapper"><div class="pseudo-element-box box2"></div></div></div>
+      <div class="percent-wrapper"><div class="pseudo-element-wrapper"><div class="pseudo-element-box box3"></div></div></div>
+      <div class="percent-wrapper"><div class="pseudo-element-wrapper"><div class="pseudo-element-box box4"></div></div></div>
+      <div class="percent-wrapper"><div class="pseudo-element-wrapper"><div class="pseudo-element-box box5"></div></div></div>
     </div><!-- /.box-wrapper -->
   </section><!-- /.section-wrapper -->
 

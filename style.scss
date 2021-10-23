@@ -31,57 +31,30 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.box1 {
+  @include background-color(30);
+}
+.box2 {
+  @include background-color(60);
+}
+.box3 {
+  @include background-color(90);
+}
+.box4 {
+  @include background-color(120);
+}
+.box5 {
+  @include background-color(150);
+}
 
 // セクション固有のクラス
 .vw-box {
   width: 25vw;
   height: 25vw;
 }
-
-.vw-box1 {
-  @include background-color(30);
+.percent-wrapper {
+  width: 25%;
 }
-.vw-box2 {
-  @include background-color(60);
-}
-.vw-box3 {
-  @include background-color(90);
-}
-.vw-box4 {
-  @include background-color(120);
-}
-.vw-box5 {
-  @include background-color(150);
-}
-
-
-
-
-// 過去のもの
-.wrapper--padding32px {
-  padding: $padding;
-}
-
-.wrapper--padding32pxfix {
-  padding: $padding;
-  // width: calc( 50% + 64px );
-  width: calc( 50% + #{$padding} * 2 );
-}
-
-.description-wrapper {
-  padding:1em 1em 1em 2em;
-  list-style-position: inside;
-  li {
-    text-indent: -1em;
-  }
-}
-
-.vw-content {
-  @include background-color(60);
-  height: calc( 50vw * 0.75);
-  width: 50vw;
-}
-
 .pseudo-element-wrapper {
   position: relative;
   width: 100%;
@@ -89,11 +62,9 @@ body {
 .pseudo-element-wrapper::before {
   content:"";
   display: block;
-  padding-top: 75%; /* 高さを幅の75%に固定 */
+  padding-top: 100%; /* 高さを幅の75%に固定 */
 }
-
-@mixin content($hue) {
-  @include background-color($hue);
+.pseudo-element-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -101,12 +72,3 @@ body {
   right: 0;
 }
 
-.content1 {
-  @include content(120);
-}
-.content2 {
-  @include content(180);
-}
-.content3 {
-  @include content(210);
-}

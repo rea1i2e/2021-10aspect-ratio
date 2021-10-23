@@ -28,53 +28,33 @@ body {
       flex-wrap: wrap;
 }
 
+.box1 {
+  background-color: #d6995c;
+}
+
+.box2 {
+  background-color: #d6d65c;
+}
+
+.box3 {
+  background-color: #99d65c;
+}
+
+.box4 {
+  background-color: #5cd65c;
+}
+
+.box5 {
+  background-color: #5cd699;
+}
+
 .vw-box {
   width: 25vw;
   height: 25vw;
 }
 
-.vw-box1 {
-  background-color: #d6995c;
-}
-
-.vw-box2 {
-  background-color: #d6d65c;
-}
-
-.vw-box3 {
-  background-color: #99d65c;
-}
-
-.vw-box4 {
-  background-color: #5cd65c;
-}
-
-.vw-box5 {
-  background-color: #5cd699;
-}
-
-.wrapper--padding32px {
-  padding: 32px;
-}
-
-.wrapper--padding32pxfix {
-  padding: 32px;
-  width: calc( 50% + 32px * 2);
-}
-
-.description-wrapper {
-  padding: 1em 1em 1em 2em;
-  list-style-position: inside;
-}
-
-.description-wrapper li {
-  text-indent: -1em;
-}
-
-.vw-content {
-  background-color: #d6d65c;
-  height: calc( 50vw * 0.75);
-  width: 50vw;
+.percent-wrapper {
+  width: 25%;
 }
 
 .pseudo-element-wrapper {
@@ -85,30 +65,11 @@ body {
 .pseudo-element-wrapper::before {
   content: "";
   display: block;
-  padding-top: 75%;
+  padding-top: 100%;
   /* 高さを幅の75%に固定 */
 }
 
-.content1 {
-  background-color: #5cd65c;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.content2 {
-  background-color: #5cd6d6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.content3 {
-  background-color: #5c99d6;
+.pseudo-element-box {
   position: absolute;
   top: 0;
   left: 0;
